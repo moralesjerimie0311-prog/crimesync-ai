@@ -1,0 +1,90 @@
+{
+  "accuracy": 83.33,
+  "precision_weighted": 84.17,
+  "recall_weighted": 83.33,
+  "f1_weighted": 83.46,
+  "per_class": {
+    "Low Risk": {
+      "precision": 0.6,
+      "recall": 0.75,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
+    "Medium Risk": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 6.0
+    },
+    "High Risk": {
+      "precision": 0.9285714285714286,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9285714285714286,
+      "support": 14.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      2,
+      4,
+      0
+    ],
+    [
+      0,
+      1,
+      13
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "Low Risk",
+    "Medium Risk",
+    "High Risk"
+  ],
+  "feature_importances": {
+    "barangay_enc": 0.3062593299120423,
+    "crime_type_enc": 0.13149814951833344,
+    "month": 0.09712655322147552,
+    "day_of_week": 0.08626435968139028,
+    "total_incidents": 0.23674914710814873,
+    "days_since_last": 0.1421024605586098
+  },
+  "test_set_size": 24,
+  "class_distribution_test": {
+    "2": 14,
+    "1": 6,
+    "0": 4
+  },
+  "present_classes": [
+    0,
+    1,
+    2
+  ],
+  "cv_skipped": false,
+  "cv_n_folds": 5,
+  "cv_f1_scores": [
+    77.21,
+    95.53,
+    77.21,
+    67.1,
+    82.26
+  ],
+  "cv_f1_mean": 79.86,
+  "cv_f1_std": 9.25,
+  "trained_at": "2026-06-04T12:48:34.763074",
+  "n_samples": 116,
+  "n_barangays": 21,
+  "n_classes": 3,
+  "features": [
+    "barangay_enc",
+    "crime_type_enc",
+    "month",
+    "day_of_week",
+    "total_incidents",
+    "days_since_last"
+  ]
+}
