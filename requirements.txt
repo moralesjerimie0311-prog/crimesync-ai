@@ -6,3 +6,5 @@ pandas
 scikit-learn
 mysql-connector-python
 joblib
+prophet
+statsmodels
